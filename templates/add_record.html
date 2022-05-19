@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  
+  <p>Add a new record to our database</p>
+  <form method="POST">
+      
+      {{form.hidden_tag()}}
+      
+
+    
+      {{form.item_details.label}}{{form.item_details()}}
+  </br>
+  </br>
+
+      {{form.employee_id.label}}{{form.employee_id()}}
+  </br>
+  </br>
+      {{form.week_no.label}}{{form.week_no()}}
+  </br> 
+  </br>   
+      {{form.weekly_sales.label}}{{form.weekly_sales()}}
+  </br> 
+  </br>   
+      {{form.sales_year.label}}{{form.sales_year()}}
+  </br>
+  </br> 
+   
+  </br> 
+  </br> 
+      
+      {{form.submit()}}
+  </form>
+</div>
+
+{% endblock %}  
+
