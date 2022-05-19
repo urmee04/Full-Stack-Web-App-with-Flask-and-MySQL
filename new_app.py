@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'
 
@@ -20,7 +21,7 @@ mydb = mysql.connector.connect(
     )
 cursor = mydb.cursor()
 
-#cursor.execute("CREATE DATABASE new_app")
+cursor.execute("CREATE DATABASE new_app")
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Biroktikor211@localhost/new_app'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -57,14 +58,13 @@ class Sales(db.Model):
 class Products(db.Model):
   __tablename__ = 'prod_details'
   id = db.Column(db.Integer,primary_key= True)
-  #prod_name = db.Column(db.Text)
-  prod_price = db.Column(db.Integer)
+  region = db.Column(db.Text)
   sales_details_id = db.Column(db.Integer,db.ForeignKey('sales_details.id'))
   
 
-  def __init__(self,sales_details_id,prod_price):
+  def __init__(self,sales_details_id,region):
      self.sales_details_id = sales_details_id
-     self.prod_price = prod_price
+     self.region = region
      
 
 
