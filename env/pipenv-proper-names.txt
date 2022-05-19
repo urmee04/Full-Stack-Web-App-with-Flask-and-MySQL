@@ -1,0 +1,16 @@
+Flask
+Flask-Dance
+Flask-DebugToolbar
+Flask-Login
+Flask-Migrate
+Flask-OAuth
+Flask-OAuthlib
+Flask-SQLAlchemy
+Flask-WTF
+Jinja2
+Mako
+MarkupSafe
+SQLAlchemy
+SQLAlchemy-Utils
+Werkzeug
+WTForms
