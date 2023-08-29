@@ -1,1 +1,1 @@
-# tek_akter_capstone1
+# Full Stack Web App with Flask and MySQL
