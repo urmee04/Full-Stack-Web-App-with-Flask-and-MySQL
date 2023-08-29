@@ -1,4 +1,4 @@
-# tek_akter_capstone1
+## Fullstack Web App with Flask and MySQL Database
 
 #### Project Setup and Installation
 Set up local development environment
