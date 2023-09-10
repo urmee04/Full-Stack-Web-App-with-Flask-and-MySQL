@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 ## Fullstack Web App with Flask and MySQL Database
 
 #### Project Setup and Installation
