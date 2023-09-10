@@ -10,4 +10,3 @@
 - Then run python new_app.py
 - Load sales_data.csv on sales_tables.py file
 
->>>>>>> master
